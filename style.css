@@ -1,0 +1,331 @@
+*{
+  text-decoration: none;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/***********************************************TAGS HTML*/
+
+body {
+  margin: 0;
+  place-items: center;
+  
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  background-color: #213547;
+  position: fixed;
+  width: 100%;
+  
+}
+
+header img{
+  padding: 5px;
+  height: 80px;
+  width: 150px;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+header ul, button{
+  color: wheat;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-left: 52%;
+  align-self: center;
+  justify-self: center;
+}
+
+header a{
+  color: white;
+  text-decoration: inherit;
+}
+
+header button{
+  margin: 15px;
+  align-self: center;
+  background-color: blueviolet;
+  color: white;
+}
+
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: white;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*********************************************************CLASES*/
+/***********************************************SLIDER*/
+.slider{
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.slider-inner{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  transition: all 5s ease -in;
+}
+
+.img1{
+ /* background-image: url('/img/slider/apes-planet3.jpeg');*/
+  background-repeat: no-repeat;
+  color: white;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.slider-inner div button{
+  
+  margin: 0px;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowl img, .arrowr img{
+  width: 50px;
+  height: 50px;
+}
+
+.poster img{
+  height: 400px;
+  width: 300px;
+
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  background-color: lightslategray;
+  border: solid 6px #535bf2;
+}
+
+.info textarea{
+  height: 300px;
+  width: 400px;
+}
+
+.btns{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn1, .btn2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+a{
+  color: white;
+  line-height: 22px;
+}
+
+.btn2 img{
+  padding-top: 3px;
+}
+
+.btn1 a{
+  line-height: 22px;
+}
+
+.img2{
+  background-image: url('/img/slider/avatar1.jpg');
+}
+
+.img3{
+  background-image: url('/img/slider/galaxy-guardians3.jpg');
+}
+
+
+.btns img{
+  width: 50px;
+  height: 50px;
+}
+
+.slider-inner .img1, .img2, .img3{
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+}
+
+.slider-inner img{
+  aspect-ratio: 16/9;
+}
+
+/***********************************************DIVS PRINICPALES*/
+
+#resenia{
+  background-image: url('./img/backgrounds/rersenia.jpg');
+  color: white;
+}
+
+#resenia h1{
+  padding-top: 20px;
+}
+
+#resenia h2{
+  line-height: 1px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  
+}
+
+.msjResenia{
+  height: 800px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input{
+  color: black
+}
+
+#cartelera{
+  background-image: url('/img/backgrounds/cartelera.jfif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: 1200px;
+  
+}
+
+#cartelera h1{
+  padding: 15px;
+}
+
+.pelis{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.peli1 h2, .peli2 h2, .peli3 h2, .peli4 h2, .peli5 h2, .peli6 h2, .peli7 h2, .peli8 h2, .peli9 h2, .peli10 h2{
+  text-align: center;
+}
+
+.peli1 img, .peli2 img, .peli3 img, .peli4 img, .peli5 img, .peli6 img, .peli7 img, .peli8 img, .peli9 img, .peli10 img{
+  height: 400px;
+  width: 272px;
+  margin: 20px;
+} 
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 600px){
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    margin: 80px;
+  }
+
+  header ul{
+    margin-left: 10px;
+  }
+
+  header button{
+    margin-left: 0px;
+  }
+
+  header{
+    width: 100%;
+  }
+
+  header ul{
+    margin-right: 200px;
+  }
+
+  .container{
+    display: none;
+  }
+
+  .pelis{
+    flex-wrap: wrap;
+  }
+
+  .peli7{
+    display: none;
+  }
+
+  .pelis8{
+    display: none;
+  }
+
+  .cartelera{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 1200px;
+    
+  }
+}

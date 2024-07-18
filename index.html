@@ -122,10 +122,16 @@
         <input type="text" name="Email" id="inpMail" placeholder="Ingrese su email">
         <input type="text" name="Resenia" id="inpResenia" placeholder="Ingrese su mensaje" style="width:400px; height:300px">
         <div>
-          <input type="button" name="finalizar" value="Finalizar">
-          <input type="button" name="reiniciar" value="Reiniciar">
+          <input type="button" onclick="msjResenia()" id="finalizar" value="Finalizar" />
+          <input type="button" onclick="limpiarForm()" id="reiniciar" value="Reiniciar" />
         </div>
       </form>
+    </div>
+    <div class="msjResenia">
+      <label>Reseña de peliculas</label>
+      <h1 name="resenia-h1"></h1>
+      <img src="img/Icons/estrella.png" alt="" />
+      <p class="resenia-p"></p>
     </div>
     <script type="module" src="/functions.js"></script>
     
